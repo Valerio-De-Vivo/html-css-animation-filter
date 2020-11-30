@@ -180,7 +180,7 @@
 }
 
 @keyframes animationleft {
-  0% {left:10%}
+  0% {left:10%;}
   20% {left:20%}
   40% {left:30%}
   60% {left:40%}
@@ -194,4 +194,30 @@
   50% {right:40%}
   75% {right:50%}
   100% {right:60%}
+}
+
+.ex-13-button:hover .ex-13-top-white {
+  animation: giroleft 3s linear;
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+  animation: giroright 3s linear;
+}
+
+@keyframes giroleft {
+  0% {left:10%; top:-10%}
+  20% {left:80%; top:-10%;}
+  40% {left:80%; top:90%;}
+  60% {left:0%; top:90%;}
+  80% {left:-10%; top:-10%}
+  100% {left:10%; top:-10%}
+}
+
+@keyframes giroright {
+  0% {right:20%; bottom:-10%}
+  20% {right:80%; bottom:-10%;}
+  40% {right:80%; bottom:90%;}
+  60% {right:0%; bottom:90%;}
+  80% {right:-20%; bottom:-10%}
+  100% {right:20%; bottom:-10%}
 }
