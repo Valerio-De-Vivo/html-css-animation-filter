@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: aquamarine;
+  margin: auto;
+  animation: bgc 6s infinite;
+}
+
+@keyframes bgc {
+  0% {
+    background-color: lightblue;
+  }
+
+  50% {
+    background-color: blue;
+  }
+
+  100% {
+    background-color: black;
+  }
+}
+
+.pesci {
+  width: 300px;
+  position: relative;
+  animation: pesci 6s infinite linear;
+}
+
+@keyframes pesci {
+  0% {
+    left: 0%;
+    top: 0%;
+    transform: rotate(10deg);
+  }
+
+  10% {
+    left: 10%;
+    top: 10%;
+    transform: rotate(20deg);
+  }
+
+  20% {
+    left: 20%;
+    top: 20%;
+    transform: rotate(30deg);
+  }
+
+  30% {
+    left: 30%;
+    top: 30%;
+    transform: rotate(30deg);
+  }
+
+  40% {
+    left: 40%;
+    top: 40%;
+    transform: rotate(25deg);
+  }
+
+  50% {
+    left: 50%;
+    top: 50%;
+    transform: rotate(20deg);
+  }
+
+  60% {
+    left: 60%;
+    top: 60%;
+    transform: rotate(15deg);
+  }
+  70% {
+    left: 70%;
+    top: 70%;
+    transform: rotate(10deg);
+  }
+  100% {
+    left: 100%;
+    top: 80%;
+    transform: rotate(0deg);
+  }
+}
+
+.medusa {
+  width: 300px;
+  position: absolute;
+  animation: medusa 6s infinite;
+}
+
+@keyframes medusa {
+  0% {
+    bottom: 0%;
+    left: 0%;
+  }
+
+  100% {
+    bottom: 100%;
+    left: 0%;
+  }
+}
+
+.stella {
+  width: 300px;
+  position: absolute;
+  animation: star 6s infinite linear;
+}
+
+@keyframes star {
+  0% {
+    bottom: -10%;
+    right: 0%;
+  }
+
+  70% {
+    bottom: 0%;
+    right: 0%;
+  }
+
+  100% {
+    bottom: 0%;
+    right: -30%;
+  }
+}
